@@ -4,41 +4,24 @@ import React, { Component } from 'react';
 export class Footer extends Component {
   render() {
     return (
-      <footer
-        style={{
-          backgroundColor: '#f9f9f9',
-          padding: '40px 20px 20px',
-          textAlign: 'center',
-          fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        }}
-      >
-        <div style={{ fontSize: '20px', color: '#2c3e50', marginBottom: '25px', fontWeight: 600 }}>
+      <footer className="bg-gray-50 pt-10 px-5 text-center font-sans">
+        <div className="text-xl text-[#2c3e50] mb-6 font-semibold">
           Connect with me
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div className="flex justify-center flex-wrap gap-6">
           {/* Facebook */}
           <a
             href="https://www.facebook.com/profile.php?id=100011315406232"
             target="_blank"
             rel="noreferrer noopener"
-            style={{
-              padding: '12px 30px',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '16px',
-              color: '#405DE6',
-              display: 'inline-flex',
-              alignItems: 'center',
-            }}
+            className="inline-flex items-center px-8 py-3 text-lg font-semibold text-[#405DE6] no-underline"
           >
-            <span style={{ marginRight: '10px' }}>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-IN0bXXU1QoLiXjnQYNugN3Qo7UoirMJfC6QHn1g2mQ&s"
-                alt="Facebook Icon"
-                style={{ width: '32px', height: '32px' }}
-              />
-            </span>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-IN0bXXU1QoLiXjnQYNugN3Qo7UoirMJfC6QHn1g2mQ&s"
+              alt="Facebook Icon"
+              className="w-8 h-8 mr-2"
+            />
             Facebook
           </a>
 
@@ -47,37 +30,18 @@ export class Footer extends Component {
             href="https://www.instagram.com/ug_mjeg/"
             target="_blank"
             rel="noreferrer noopener"
-            style={{
-              padding: '12px 30px',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '16px',
-              color: '#E1306C',
-              display: 'inline-flex',
-              alignItems: 'center',
-            }}
+            className="inline-flex items-center px-8 py-3 text-lg font-semibold text-[#E1306C] no-underline"
           >
-            <span style={{ marginRight: '10px' }}>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-GBnzJ7EffOVYeMiTET9SDvCgU7WGQqDyFCrXeGQmSxdnrhpBOM9AMGq&s=10"
-                alt="Instagram Icon"
-                style={{ width: '32px', height: '32px' }}
-              />
-            </span>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-GBnzJ7EffOVYeMiTET9SDvCgU7WGQqDyFCrXeGQmSxdnrhpBOM9AMGq&s=10"
+              alt="Instagram Icon"
+              className="w-8 h-8 mr-2"
+            />
             Instagram
           </a>
         </div>
 
-        {/* Copyright */}
-        <div
-          style={{
-            marginTop: '30px',
-            color: '#7f8c8d',
-            fontSize: '14px',
-            borderTop: '1px solid #ecf0f1',
-            paddingTop: '20px',
-          }}
-        >
+        <div className="mt-8 border-t border-gray-200 pt-5 text-gray-500 text-sm">
           © 2025 Student Profile • Faculty of Science and Digital Innovation
         </div>
       </footer>

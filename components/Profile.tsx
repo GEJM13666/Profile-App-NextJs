@@ -4,21 +4,16 @@ import React, { Component } from 'react';
 export class Profile extends Component {
   render() {
     return (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginBottom: '40px',
-        }}
-      >
-        <Image
-          src="/guneang.jpg"   // path จาก public folder
-          alt="Profile"
-          width={180}
-          height={180}
-          style={{ border: '5px solid #2a5298' }}
-        />
+      <div className="flex justify-center items-center mb-10">
+        <div className="border-4 border-blue-900 rounded"> {/* เพิ่ม rounded ให้ดูสวยขึ้น */}
+          <Image
+            src="/guneang.jpg"
+            alt="Profile"
+            width={180}
+            height={180}
+            className="block"
+          />
+        </div>
       </div>
     );
   }

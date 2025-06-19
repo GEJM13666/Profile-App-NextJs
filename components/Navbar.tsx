@@ -3,92 +3,24 @@ import React, { Component } from 'react';
 export class Navbar extends Component {
   render() {
     return (
-      <nav
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          backgroundColor: '#003366', // Deep university blue
-          padding: '10px 30px',
-          fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        }}
-      >
+      <nav className="flex justify-between items-center bg-[#003366] px-8 py-2 font-sans">
         {/* University Logo / Name */}
-        <div
-          style={{
-            color: '#fff',
-            fontWeight: '700',
-            fontSize: '24px',
-            letterSpacing: '1px',
-          }}
-        >
+        <div className="text-white font-extrabold text-2xl tracking-wider">
           652021073
         </div>
 
         {/* Navigation Links */}
-        <ul
-          style={{
-            listStyle: 'none',
-            display: 'flex',
-            gap: '25px',
-            margin: 0,
-            padding: 0,
-          }}
-        >
-          <li>
-            <a
-              href="#home"
-              style={{
-                color: '#fff',
-                textDecoration: 'none',
-                fontWeight: 600,
-                fontSize: '16px',
-                padding: '8px 12px',
-                borderRadius: '4px',
-                transition: 'background-color 0.3s ease',
-              }}
-              onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#002244')}
-              onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              style={{
-                color: '#fff',
-                textDecoration: 'none',
-                fontWeight: 600,
-                fontSize: '16px',
-                padding: '8px 12px',
-                borderRadius: '4px',
-                transition: 'background-color 0.3s ease',
-              }}
-              onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#002244')}
-              onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              style={{
-                color: '#fff',
-                textDecoration: 'none',
-                fontWeight: 600,
-                fontSize: '16px',
-                padding: '8px 12px',
-                borderRadius: '4px',
-                transition: 'background-color 0.3s ease',
-              }}
-              onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#002244')}
-              onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
-            >
-              Contact
-            </a>
-          </li>
+        <ul className="flex gap-6 list-none m-0 p-0">
+          {['Home', 'About', 'Contact'].map((item) => (
+            <li key={item}>
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="text-white font-semibold text-base px-3 py-2 rounded transition-colors duration-300 hover:bg-[#002244] no-underline"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     );

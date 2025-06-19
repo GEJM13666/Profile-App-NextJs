@@ -7,40 +7,12 @@ interface HeaderState {}
 export class Header extends Component<HeaderProps, HeaderState> {
   render() {
     return (
-      <div
-        style={{
-          maxWidth: '800px',
-          margin: '20px auto',
-          background: 'rgba(255,255,255,.95)',
-          border: '1px solid rgba(255,255,255,.2)',
-          fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        }}
-      >
-        <div
-          style={{
-            background: '#1e3c72',
-            padding: '50px 40px',
-            textAlign: 'center',
-          }}
-        >
-          <h1
-            style={{
-              fontFamily: "'Times New Roman', serif",
-              fontSize: '42px',
-              color: '#ffffff',
-              margin: '0 0 10px 0',
-              fontWeight: 700,
-            }}
-          >
+      <div className="max-w-3xl mx-auto my-5 bg-white bg-opacity-95 border border-white border-opacity-20 font-sans">
+        <div className="bg-[#1e3c72] py-12 px-10 text-center">
+          <h1 className="font-serif text-4xl text-white mb-2 font-bold">
             Student Profile
           </h1>
-          <div
-            style={{
-              fontSize: '18px',
-              color: 'rgba(255,255,255,.9)',
-              fontWeight: 300,
-            }}
-          >
+          <div className="text-lg text-white text-opacity-90 font-light">
             Faculty of Science and Digital Innovation
           </div>
         </div>

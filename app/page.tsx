@@ -2,80 +2,83 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div style={{ maxWidth: 800, margin: "20px auto", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}>
+    <div className="max-w-3xl mx-auto my-5 font-sans">
       
-      <div
-        style={{
-          fontSize: 18,
-          lineHeight: 1.8,
-          color: "#2c3e50",
-          marginBottom: 40,
-          textAlign: "center",
-          fontWeight: 400,
-        }}
-      >
+      <div className="text-center text-[#2c3e50] mb-10 text-base leading-relaxed font-normal">
         Hello! I'm{" "}
-        <span style={{ background: "#FFD700", padding: "2px 8px", fontWeight: 600, color: "#2c3e50" }}>
+        <span className="bg-yellow-400 px-2 py-0.5 font-semibold text-[#2c3e50]">
           Sakan Wokkum
         </span>
         , also known as{" "}
-        <span style={{ background: "#FFD700", padding: "2px 8px", fontWeight: 600, color: "#2c3e50" }}>
+        <span className="bg-yellow-400 px-2 py-0.5 font-semibold text-[#2c3e50]">
           Gun
         </span>
         . I'm currently pursuing a degree in{" "}
-        <span style={{ background: "#a8edea", padding: "2px 8px", fontWeight: 600, color: "#2c3e50" }}>
+        <span className="bg-cyan-200 px-2 py-0.5 font-semibold text-[#2c3e50]">
           Computer Science
         </span>
         . I was born on{" "}
-        <span style={{ background: "#FFD700", padding: "2px 8px", fontWeight: 600, color: "#2c3e50" }}>
+        <span className="bg-yellow-400 px-2 py-0.5 font-semibold text-[#2c3e50]">
           24th November 2003
         </span>
         , and I'm passionate about technology, programming, and all things tech-related!
       </div>
 
-      <div style={{ marginBottom: 40 }}>
-        <div style={{ background: "#f8f9fa", padding: 25, borderLeft: "5px solid #2a5298", marginBottom: 20 }}>
-          <h3 style={{ color: "#2a5298", margin: "0 0 20px 0", fontSize: 20, fontWeight: 600 }}>Academic Information</h3>
+      <div className="mb-10 space-y-5">
+        {/* Academic Info */}
+        <div className="bg-gray-50 p-6 border-l-4 border-[#2a5298]">
+          <h3 className="text-[#2a5298] mb-5 text-xl font-semibold">Academic Information</h3>
 
-          <div style={{ marginBottom: 15, fontSize: 16, lineHeight: 1.6 }}>
-            <span style={{ fontWeight: 600, color: "#2c3e50", minWidth: 120, display: "inline-block" }}>Faculty:</span>
-            <span style={{ color: "#2a5298", fontWeight: 500 }}>🌻Faculty of Science and Digital Innovation</span>
+          <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">Faculty:</span>
+            <span className="text-[#2a5298] font-medium">🌻Faculty of Science and Digital Innovation</span>
           </div>
 
-          <div style={{ marginBottom: 15, fontSize: 16, lineHeight: 1.6 }}>
-            <span style={{ fontWeight: 600, color: "#2c3e50", minWidth: 120, display: "inline-block" }}>Program:</span>
-            <span style={{ color: "#2a5298", fontWeight: 500 }}>B.Sc. Computer Science</span>
+          <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">Program:</span>
+            <span className="text-[#2a5298] font-medium">B.Sc. Computer Science</span>
           </div>
 
-          <div style={{ marginBottom: 15, fontSize: 16, lineHeight: 1.6 }}>
-            <span style={{ fontWeight: 600, color: "#2c3e50", minWidth: 120, display: "inline-block" }}>Birth Date:</span>
-            <span style={{ color: "#2a5298", fontWeight: 500 }}>24th November 2003</span>
+          <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">Birth Date:</span>
+            <span className="text-[#2a5298] font-medium">24th November 2003</span>
+          </div>
+
+           <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">Phone:</span>
+            <span className="text-[#000000] font-medium">+66 64 005 4724</span>
           </div>
         </div>
 
-        <div style={{ background: "#f8f9fa", padding: 25, borderLeft: "5px solid #2a5298" }}>
-          <h3 style={{ color: "#2a5298", margin: "0 0 20px 0", fontSize: 20, fontWeight: 600 }}>Personal Information</h3>
+        {/* Personal Info */}
+        <div className="bg-gray-50 p-6 border-l-4 border-[#2a5298]">
+          <h3 className="text-[#2a5298] mb-5 text-xl font-semibold">Personal Information</h3>
 
-          <div style={{ marginBottom: 15, fontSize: 16, lineHeight: 1.6 }}>
-            <span style={{ fontWeight: 600, color: "#2c3e50", minWidth: 120, display: "inline-block" }}>MBTI Type:</span>
-            <span style={{ color: "#2a5298", fontWeight: 500 }}>INFP</span>
+          <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">MBTI Type:</span>
+            <span className="text-[#2a5298] font-medium">INFP</span>
           </div>
 
-          <div style={{ marginBottom: 15, fontSize: 16, lineHeight: 1.6 }}>
-            <span style={{ fontWeight: 600, color: "#2c3e50", minWidth: 120, display: "inline-block" }}>Hobbies:</span>
-            <span style={{ color: "#2a5298", fontWeight: 500 }}>
+          <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">Hobbies:</span>
+            <span className="text-[#2a5298] font-medium">
               Coding, Gaming, Movies, Podcasts, Tech Exploration
             </span>
           </div>
 
-          <div style={{ marginBottom: 15, fontSize: 16, lineHeight: 1.6 }}>
-            <span style={{ fontWeight: 600, color: "#2c3e50", minWidth: 120, display: "inline-block" }}>Favorite Colors:</span>
-            <span style={{ color: "#2a5298", fontWeight: 500 }}>Black and Grey</span>
+          <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">Favorite Colors:</span>
+            <span className="text-[#2a5298] font-medium">Black and Grey</span>
           </div>
 
-          <div style={{ marginBottom: 15, fontSize: 16, lineHeight: 1.6 }}>
-            <span style={{ fontWeight: 600, color: "#2c3e50", minWidth: 120, display: "inline-block" }}>Career Goal:</span>
-            <span style={{ color: "#2a5298", fontWeight: 500 }}>Whatever I Like</span>
+          <div className="mb-4 text-base leading-relaxed">
+            <span className="font-semibold text-[#2c3e50] inline-block min-w-[120px]">Career Goal:</span>
+            <span className="text-[#2a5298] font-medium">Whatever I Like</span>
+          </div>
+
+      
+          <div className="mt-6 text-base leading-relaxed italic text-[#555] border-t border-gray-300 pt-4">
+            “The only way to do great work is to love what you do.” – Steve Jobs
           </div>
         </div>
       </div>
